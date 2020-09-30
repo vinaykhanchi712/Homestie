@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Signup</title>
+    <link rel="stylesheet" href="/css/signup-min.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/signup-min.css">
-</head>
-
-<body>
+  <body>
     <header>
+      <form action="backend.php">
+        <h2>Welcome to Homestie!</h2>
+        <div class="firstname">
+          <label for="first"> </label>
+          <input type="text" name="myFirstName" id="first" placeholder="Name" />
+        </div>
 
-        <form action="backend.php">
+        <div class="test phoneno">
+          <label for="phone"> </label>
+          <input
+            type="text"
+            name="myNumber"
+            id=" last"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div class="test emailid">
+          <label for="emailid"> </label>
+          <input type="text" name="myId" id=" last" placeholder="Email Id" />
+        </div>
+        <div class="test pass">
+          <label for="password"> </label>
+          <input
+            type="password"
+            name="myPassword"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="test confirmpass">
+          <label for="password2"> </label>
+          <input
+            type="password"
+            name="myPassword2"
+            id="password2"
+            placeholder="Confirm Password"
+          />
+        </div>
 
-
-            <h2> Welcome! to Homestie!</h2>
-            <div class="firstname">
-                <label for="first"> </label>
-                <input type="text" name="myFirstName" id="first" placeholder="First Name">
-            </div>
-            <div class="test lastname">
-                <label for="last"> </label>
-                <input type="text" name="myLastName" id="last" placeholder="Last Name">
-            </div>
-            <div class="test phoneno">
-                <label for="phone"> </label>
-                <input type="text" name="myNumber" id=" last" placeholder="Phone Number">
-            </div>
-            <div class="test emailid">
-                <label for="emailid"> </label>
-                <input type="text" name="myId" id=" last" placeholder="Email Id">
-            </div>
-            <div class="test pass">
-                <label for="password"> </label>
-                <input type="password" name="myPassword" id="password" placeholder="Password">
-            </div>
-            <div class="test confirmpass">
-                <label for="password2"> </label>
-                <input type="password" name="myPassword2" id="password2" placeholder="Confirm Password">
-            </div>
-
-            <div class="test submit">
-                <input type="submit" value="Sign up">
-            </div>
-            <div class="create">
-                <a href="/login/user">Already have an account! &#10145; </a>
-            </div>
-
-        </form>
-
+        <div class="test submit">
+          <input type="submit" value="Sign up" />
+        </div>
+        <div class="create">
+          <a href="/login">Already have an account! &#10145; </a>
+        </div>
+      </form>
     </header>
-
-</body>
-
+  </body>
 </html>

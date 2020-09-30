@@ -1,47 +1,54 @@
-
 * {
     padding: 0px;
     margin: 0px;
-}
-body {
-  background-color: rgb(143, 52, 196);;
-    font-family: 'Roboto', sans-serif;
-
-}
-img{
+  }
+  
+  input:focus::placeholder {
+    opacity: 0;
+  }
+  
+  body {
+    background-color: #050505;
+    font-family: "Roboto", sans-serif;
+  }
+  img {
     width: 200px;
     height: 200px;
     position: relative;
     top: 50px;
-}
-.container {
+  }
+  
+  input{
+      letter-spacing: 1px;
+  }
+  
+  .container {
     display: flex;
     flex-direction: row-reverse;
     width: 600px;
     height: 400px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ebebeb;
     padding: 50px 100px;
     margin: auto;
     position: relative;
     top: 100px;
-
-}
-input[type=text]:focus {
+  }
+  input[type="text"]:focus {
     outline: none;
     text-align: center;
-}
-
-input[type=password]:focus {
+  }
+  
+  input[type="password"]:focus {
     outline: none;
-    text-align: center;}
-    h2{
-        padding-bottom: 15px;
-        color: black;
-    }
-
-form {
-    
-    background-color: white;
+    text-align: center;
+  }
+  h2 {
+    padding-bottom: 15px;
+    color: black;
+  }
+  
+  form {
+    background-color: #ebebeb;
     width: 400px;
     height: 400px;
     margin: auto;
@@ -49,66 +56,56 @@ form {
     box-sizing: border-box;
     position: relative;
     right: 90px;
-}
-
-.email {
+  }
+  
+  .email {
     padding: 10px;
-}
-
-.password {
+  }
+  
+  .password {
     padding: 10px;
-}
-
-.submit {
-
+  }
+  
+  .submit {
     padding: 10px;
-}
-
-::placeholder {
+  }
+  
+  ::placeholder {
     text-align: center;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: gray;
-    font-size: 16px;
+    font-size: 14px;
     animation: rahul 2s ease-in-out 0.5s 12 forwards;
-
-}
-
-input[type=submit] {
+  }
+  
+  input[type="submit"] {
     width: 25em;
     height: 3.8em;
     font-size: 14px;
-    background-color: rgb(29, 202, 43);
+    background-color: rgb(31, 177, 43);
     color: white;
     border-radius: 50px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     border: none;
-    animation: rahul 2s ease-in-out 0.5s 1 forwards;
-    
-}
-@keyframes rahul {
-from {
-    width: 0em;
-}
-
-to {
-    width: 25em;
-}
-}
-
-input[type=text] {
-    width: 25em;
-    height: 3.8em;
-    font-size: 14px;
-    border: none;
-    color: black;
-    background-color: rgb(224, 224, 224);
-    border-radius: 50px;
-    animation: rahul 2s ease-in-out 0.5s 1 forwards;
-
-}
-
-input[type=password] {
+    animation: rahul 2s ease-in-out 0.5s forwards;
+  }
+  
+  input[type="submit"]:focus, input[type="submit"]:active{
+      outline: none;
+  }
+  
+  @keyframes rahul {
+    from {
+      width: 5em;
+    }
+  
+    to {
+      width: 25em;
+    }
+  }
+  
+  input[type="text"] {
     width: 25em;
     height: 3.8em;
     font-size: 14px;
@@ -117,37 +114,49 @@ input[type=password] {
     background-color: rgb(224, 224, 224);
     border-radius: 50px;
     animation: rahul 2s ease-in-out 0.5s 1 forwards;
-
-}
-
-a {
+  }
+  
+  input[type="password"] {
+    width: 25em;
+    height: 3.8em;
+    font-size: 14px;
+    border: none;
+    color: black;
+    background-color: rgb(224, 224, 224);
+    border-radius: 50px;
+    animation: rahul 2s ease-in-out 0.5s 1 forwards;
+  }
+  
+  a {
     text-decoration: none;
     color: #2b2929;
-}
-
-a:hover {
-    color: blue;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    letter-spacing: 1px;
     cursor: pointer;
-
-}
-
-input[type=submit]:hover {
+  }
+  
+  input[type="submit"]:hover {
     background-color: green;
     cursor: pointer;
-}
-
-.create {
-
+  }
+  
+  .create {
     text-align: center;
     padding-top: 55px;
     font-size: 14px;
     text-shadow: white;
-}
-.forgot {
+    color: #333;
+  }
+  .forgot {
     padding: 5px;
     text-align: center;
     font-size: 14px;
-    text-shadow: white;}
-span{
+    text-shadow: white;
+    color: #333;
+  }
+  span {
     color: gray;
-}
+  }
