@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sa1 = document.querySelector(".sweet-1")
-    const sa2 = document.querySelector(".sweet-2")
-    const sa3 = document.querySelector(".sweet-3")
-    const sa4 = document.querySelector(".sweet-4")
+    const ia1 = document.querySelector(".input-alert1")
+    const ia2 = document.querySelector(".input-alert2")
+    const ia3 = document.querySelector(".input-alert3")
+    const ia4 = document.querySelector(".input-alert4")
+    const ia5 = document.querySelector(".input-alert5")
+    const ia6 = document.querySelector(".input-alert6")
+    const ia7 = document.querySelector(".input-alert7")
     const form = document.querySelector("#form")
 
     const Toast = Swal.mixin({
@@ -18,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     form.addEventListener("submit", (e) => {
-        if (sa1.value.trim() == "" || sa2.value.trim() == "" || sa3.value.trim() == "" || sa4.value.trim() == "") {
+        if (ia1.value.trim() == "" || ia2.value.trim() == "" || ia3.value.trim() == "" || ia4.value.trim() == "" || ia5.value.trim() == "" || ia7.value.trim() == "" || ia6.value.trim() === "choosehere") {
             e.preventDefault()
             Toast.fire({
                 icon: "error",

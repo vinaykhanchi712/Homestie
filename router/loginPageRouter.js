@@ -1,11 +1,9 @@
 const express = require("express")
 const router = express.Router()
 
-router.get("/user", (req, res) => {
-    res.render("login")
-})
-
-router.get("/admin", (req, res) => {
+router.get("/:role", (req, res) => {
+    const userRole = req.params.role
+    
     res.render("login")
 })
 

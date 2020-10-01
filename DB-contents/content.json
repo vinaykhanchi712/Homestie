@@ -1,0 +1,137 @@
+[{
+        "id": 1,
+        "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-22569/iphone_xr-1-1024x768.jpg",
+        "name": "iPhone XR",
+        "discription": "Apple's flagship grade A12 bionic chipset.6.1 inch ratina lcd panel.",
+        "video": "https://youtu.be/-6h9ZEQc4E4",
+        "warrenty": "https://checkcoverage.apple.com/",
+        "catagory": "mobile"
+    },
+    {
+        "id": 2,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS6tUil_ApZsHTwqYJyeYUg7JpsgHvqKVl9xO_HeWbUBhAeZQhTrPZIvWb79IaC9BQxgOOXvlY&usqp=CAc",
+        "name": "OnePlus Nord 5g",
+        "discription": "Flagship grade snapdragon 765G processor.4115 mAh battery.6.44 inch 90 hz sAmoled display.",
+        "video": "https://youtu.be/0uGW8Bdk2Vs",
+        "warrenty": "https://www.oneplus.in/support/repair",
+        "catagory": "mobile"
+    },
+    {
+        "id": 3,
+        "image": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-9-pro-global-0.jpg",
+        "name": "Redmi Note 9",
+        "discription": "Mediatek Helio G85 octa core processor with 12nm process.5020mAH lithium-polymer battery and dedicated SD card ",
+        "video": "https://youtu.be/vtiSy8PPXPo",
+        "warrenty": "https://www.mi.com/in/service/warranty/",
+        "catagory": "mobile"
+    },
+    {
+        "id": 4,
+        "image": "https://cdn.mos.cms.futurecdn.net/r75W7xKkPwuFG6gvxjL26o-1200-80.jpg",
+        "name": "Macbook Air 2017",
+        "discription": "Dual-core 5th-generation Intel Core i5 processor. Intel HD Graphics 6000.SSD storage,8GB memory.Two USB 3 ports,Thunderbolt 2 port",
+        "video": "https://youtu.be/AtmvPaI9GPA",
+        "warrenty": "https://checkcoverage.apple.com/",
+        "catagory": "laptop"
+    },
+    {
+        "id": 5,
+        "image": "https://img.favpng.com/5/21/2/dell-alienware-17-r4-laptop-dell-alienware-17-r4-intel-core-i7-png-favpng-W20nA4AdMYpTdyJuHf1hMRmeT.jpg",
+        "name": "Dell Alienware 17 Gaming ",
+        "discription": "Intel i7-7700HQ processor16GB DDR4 RAM,1TB hard drive.17-inch screen,NVIDIA GeForce GTX 1070 8GB Graphics ",
+        "video": "https://youtu.be/fURkRSbO20k",
+        "warrenty": "https://www.dell.com/support/contents/en-in/category/warranty",
+        "catagory": "laptop"
+    },
+    {
+        "id": 6,
+        "image": "https://www.lenovo.com/medias/lenovo-thinkpad-l490-hero-1126.png?context=bWFzdGVyfHJvb3R8OTYyODZ8aW1hZ2UvcG5nfGhjNC9oZTIvMTA2NzM0OTAxMDAyNTQucG5nfDQ3OTk0NzA2YmUxY2UxYWE4NTcxNzlhOTkxNjg3NjJhMjk5MWM4Y2Q1MmQ0YjRhMTEyNmUwMDBjZGEyYWUyZjI",
+        "name": "Lenovo ThinkPad L490 ",
+        "discription": "Intel core i5 8265u.light weight, 14 inch display.Advance security features(encription,MFA,etc.).",
+        "video": "https://youtu.be/OwXggnqJLEI",
+        "warrenty": "https://pcsupport.lenovo.com/in/en/warrantylookup#/",
+        "catagory": "laptop"
+    },
+    {
+        "id": 7,
+        "image": "https://i.ytimg.com/vi/aozLKpqBsa8/sddefault.jpg",
+        "name": "TP-Link AC5400 Tri Band Gaming Router ",
+        "discription": "1.8GHz Quad-Core 64-bit CPU, Game First Priority, Link Aggregation, 16GB Storage, Airtime Fairness, Secured WiFi, Works with Alexa ",
+        "video": "https://youtu.be/aozLKpqBsa8",
+        "warrenty": "https://www.tp-link.com/us/support/replacement-warranty/",
+        "catagory": "networking"
+    },
+    {
+        "id": 8,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/51rRnQio3qL._SL1020_.jpg",
+        "name": "TP-Link Archer C7 AC1750 ",
+        "discription": "Dual Band Gigabit Wireless Cable Router, Wi-Fi Speed Up to 1300 Mbps/5 GHz + 450 Mbps/2.4 GHz, 4 Gigabit LAN Ports, 1 USB Port, Qualcomm Chipset.",
+        "video": "https://youtu.be/VLQAe91-R4Q",
+        "warrenty": "https://www.tp-link.com/us/support/replacement-warranty/",
+        "catagory": "networking"
+    },
+    {
+        "id": 9,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/417aHoqozHL._SX679_.jpg",
+        "name": "JioFi JDR740",
+        "discription": "150Mbps Wireless 4G Portable Router.Make video and HD voice calls, audio & video conference, send SMS with jiocall voice app",
+        "video": "https://youtu.be/1PptPyCsg1c",
+        "warrenty": "https://www.jio.com/en-in/faq/online-shopping/returns-refunds/what-is-the-warranty-period-applicable-on-the-jiofi.html#:~:text=The%20LYF%2Dpowered%20JioFi%20device,from%20the%20date%20of%20purchase.",
+        "catagory": "networking"
+    },
+    {
+        "id": 10,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/61ZcEGDiQZL._SX679_.jpg",
+        "name": "Whirlpool 1 Ton 5 Star Inverter Split AC",
+        "discription": "Split AC; 1 ton capacity; Minimum set Temp (°C): 16, 100% Copper.6th sense fast cool technology.Stabilizer free(145v-290v) ",
+        "video": "https://youtu.be/rLONsKVFRNk",
+        "warrenty": "https://corporate.whirlpoolindia.com/discover/annual_maintenance#gref",
+        "catagory": "electronics"
+    },
+    {
+        "id": 11,
+        "image": "https://images.samsung.com/is/image/samsung/in-uhd-tv-tue60a-ua55tue60akxxl-fronttitangray-231850698?$PD_GALLERY_L_JPG$",
+        "name": "Samsung UA55TUE60AKXXL ",
+        "discription": "Resolution: 4K Ultra HD (3840X2160) | Refresh Rate: 60 hertz,Connectivity: 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices .Sound : 20 Watts Output ",
+        "video": "https://youtu.be/dEdvxW16DdE",
+        "warrenty": "https://www.samsung.com/in/support/warranty/",
+        "catagory": "electronics"
+    },
+    {
+        "id": 12,
+        "image": "data:image/jpeg;base64,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",
+        "name": "Whirlpool WHITEMAGIC ELITE 7.0",
+        "discription": "Fully-automatic top load washing machine: Affordable with great wash quality, Easy to use,Capacity 7 kg :Suitable for families with 3 to 4 members. Product Dimensions (WDH) 88 X 56 X 54 cm",
+        "video": "https://youtu.be/8SiRjp-Smcs",
+        "warrenty": "https://corporate.whirlpoolindia.com/discover/annual_maintenance#gref",
+        "catagory": "electronics"
+    },
+    {
+        "id": 13,
+        "image": "https://5.imimg.com/data5/TV/PV/UI/SELLER-50481053/luminous-zelio-1100-pure-sine-wave-inverter-500x500.jpeg",
+        "name": "Luminous Zelio 1100 Inverter",
+        "discription": "Tube Light (40 Watts): 3, Ceiling Fan (90 Watts): 3, LED Television: 1,Sine Wave Technology, 900 VA/12 Volts Capacity, 150 Ah,32 Bit DSP Processor, Maximum Bulb Load: 685 Watt .Item Dimensions: 275 mm x 248 mm x 120 mm",
+        "video": "https://youtu.be/kFxZbwmH_ys",
+        "warrenty": "https://www.luminousindia.com/warranty",
+        "catagory": "home appliance"
+    },
+    {
+        "id": 14,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/51wa5g9sLKL._SX466_.jpg",
+        "name": "Racold Buono Pro",
+        "discription": "Rust proof body,High pressure resistance, capacity 10 litres,4 star rating",
+        "video": "https://youtu.be/7_G3SiYKrn0",
+        "warrenty": "https://www.racold.com/support",
+        "catagory": "home appliance"
+    },
+    {
+        "id": 15,
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81dX75rmk1L._SL1500_.jpg",
+        "name": "Morphy Richards 20 Litres Solo Microwave Oven",
+        "discription": "Capacity: 20 litres power: 1200 watt. Flexi power settings: for microwave cooking, there are 6 power levels to choose from.30 minutes timer.",
+        "video": "https://youtu.be/ir9fuUt2ptQ",
+        "warrenty": "https://www.morphyrichardsindia.com/register.aspx",
+        "catagory": "home appliance"
+    }
+
+]

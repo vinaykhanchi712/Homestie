@@ -1,7 +1,6 @@
 require("dotenv").config()
 const express = require("express")
 const bodyParser = require("body-parser")
-// const morgan = require("morgan")
 const ejs = require("ejs")
 const path = require("path")
 
@@ -9,6 +8,8 @@ const path = require("path")
 const homePageRouter = require("./router/homePageRouter") 
 const loginPageRouter = require("./router/loginPageRouter") 
 const signupPageRouter = require("./router/signupPageRouter") 
+const contactPageRouter = require("./router/contactPageRouter")
+const employmentPageRouter = require("./router/employmentPageRouter")
 
 // initiaising express app 
 const app = express();
@@ -19,8 +20,11 @@ app.set("view engine", "ejs")
 // uisng bodyParser middleware...
 app.use(bodyParser.urlencoded({ extended : true }))
 
-// use morgan middleware
-// app.use(morgan("dev"))
+// *********************************************************************************
+// use morgan middleware only for developing....
+const morgan = require("morgan")
+app.use(morgan("dev"))
+// *********************************************************************************
 
 // serving static files
 app.use(express.static(path.join(__dirname, "public")))
@@ -35,6 +39,14 @@ app.use("/login", loginPageRouter)
 
 // register page route...
 app.use("/signup", signupPageRouter)
+
+// contact page route....
+app.use("/contact", contactPageRouter)
+
+// employment register page route....
+app.use("/employment", employmentPageRouter)
+
+
 
 // error page...
 app.use((req, res) => {

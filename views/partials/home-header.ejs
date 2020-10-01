@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homestie</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,14 +18,15 @@
     <!-- custom css -->
     <link rel="stylesheet" href="/css/home2-min.css" />
     <link rel="stylesheet" href="/css/home-min.css" />
+    <link rel="stylesheet" href="/css/carousel-min.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #272727;">
-        <a class="navbar-brand" href="#">
-            <img src="/images/homestie.png" class="brand-img"/>
-            Homestie</a>
+        <span class="navbar-brand" onclick="moveToTop()">
+            <img src="/images/homestie.png" class="brand-img" />
+            Homestie</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="ham-btn">
             <span class="navbar-toggler-icon"></span>
@@ -43,8 +49,8 @@
                         Login
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/login">User</a>
-                        <a class="dropdown-item" href="/login">Admin</a>
+                        <a class="dropdown-item" href="/login/:role">User</a>
+                        <a class="dropdown-item" href="/login/:role">Admin</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -53,8 +59,8 @@
                         Signup
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/signup">User</a>
-                        <a class="dropdown-item" href="/signup">Admin</a>
+                        <a class="dropdown-item" href="/signup/:role">User</a>
+                        <a class="dropdown-item" href="/signup/:role">Admin</a>
                     </div>
                 </li>
             </ul>

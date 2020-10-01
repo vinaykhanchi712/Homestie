@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/empl-min.css">
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <div class="row row-content">
+                <div class="col-12">
+                    <h3 class="Register">Register</h3>
+                </div>
+                <div class="m-auto col-12 col-md-10">
+                    <form action="/employment" method="POST" id="form">
+                        <div class="form-group row">
+                            <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                            <div class="col-md-10 my-auto">
+                                <input type="text" class="form-control input-alert1" id="firstname" name="firstname"
+                                    placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                            <div class="col-md-10 my-auto">
+                                <input type="text" class="form-control input-alert2" id="lastname" name="lastname"
+                                    placeholder="Last Name">
+                            </div>
+                        </div>
+                        <!-- telephone form -->
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-2 col-form-label">Contact No.</label>
+                            <div class="col-5 col-md-3 my-auto">
+                                <input type="tel" class="form-control input-alert3" id="areacode" name="areacode"
+                                    placeholder="Country dial code">
+                            </div>
+                            <div class="col-7 col-md-7 my-auto">
+                                <input type="tel" class="form-control my-auto input-alert4" id="telnum" name="telnum"
+                                    placeholder="Tel. Number">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                                <input type="email" class="form-control input-alert5" id="emailid" name="email"
+                                    placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="emailid" class="col-md-2 col-form-label ">Speciality</label>
+                            <div class="col-md-10 my-auto">
+                                <select class="form-control input-alert6" name="speciality">
+                                    <option value="choosehere">Choose here</option>
+                                    <option value="laptops">Laptops</option>
+                                    <option value="electronics">Electronics</option>
+                                    <option value="mobile">Mobile</option>
+                                    <option value="networkstuff">Network Stuff</option>
+                                    <option value="homeappliances">Home Appliances</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Address</label>
+                            <div class="col-md-10 my-auto">
+                                <textarea class="form-control input-alert7" id="feedback" name="address"
+                                    rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button class="btn btn-primary" type="submit">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/empl-min.js"></script>
+</body>
+
+</html>

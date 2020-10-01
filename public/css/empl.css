@@ -1,0 +1,29 @@
+body {
+  background-color: #eaeaea;
+}
+.Register {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+  color: #eee;
+}
+.jumbotron {
+  background-color: #1b1b1b;
+  color: #eee;
+  font-size: 1.2rem;
+}
+button {
+  width: 100%;
+}
+
+
+.swal2-toast {
+  box-shadow: none !important;
+  background-color: #f4f4f4 !important;
+  border: 1px solid #444 !important;
+  padding: 15px !important;
+}
+.swal2-title {
+  color: #333 !important;
+}
