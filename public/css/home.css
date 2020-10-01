@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+*:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 html {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -23,14 +28,184 @@ html {
 }
 
 body {
-  padding: 0;
+  font-family: "lato", sans-serif;
+  padding: 60px 0 0;
   margin: 0;
 }
 
 /* ******************************************************************************** */
-/*                                FOOTER STYLING                                    */
+/*                                NAVBAR STYLING                                    */
 /* ******************************************************************************** */
 
+.navbar-collapse {
+    position: relative;
+    padding-top: 30px !important;
+    max-height: 270px;
+}
+.navbar-collapse form[role="search"] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 0;
+}
+.navbar-collapse form[role="search"] button,
+.navbar-collapse form[role="search"] input {
+    padding: 8px 12px;
+    border-radius: 0px;
+    border-width: 0px;
+    color: rgb(119, 119, 119);
+    background-color: rgb(248, 248, 248);
+    border-color: rgb(231, 231, 231);
+    box-shadow: none;
+    outline: none;
+}
+.navbar-collapse form[role="search"] input {
+    padding: 16px 12px;
+    font-size: 14pt;
+    font-style: italic;
+    color: rgb(160, 160, 160);
+    box-shadow: none;
+}
+.navbar-collapse form[role="search"] button[type="reset"] {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-collapse {
+        padding-top: 0px !important;
+        padding-right: 38px !important;
+    }
+    .navbar-collapse form[role="search"] {
+        width: 38px;
+    }
+    .navbar-collapse form[role="search"] button,
+    .navbar-collapse form[role="search"] input {
+        padding: 15px 12px;
+    }
+    .navbar-collapse form[role="search"] input {
+        padding: 25px 12px;
+        font-size: 18pt;
+        opacity: 0;
+        display: none;
+    }
+    .navbar-collapse form[role="search"].active {
+        width: 100%;
+    }
+    .navbar-collapse form[role="search"].active button,
+    .navbar-collapse form[role="search"].active input {
+        display: table-cell;
+        opacity: 1;
+    }
+    .navbar-collapse form[role="search"].active input {
+        width: 100%;
+    }
+}
+
+/* ******************************************************************************** */
+/*                                SERVICES STYLING                                  */
+/* ******************************************************************************** */
+
+p {
+  font-size: 15px;
+  color: #1b1b1b;
+}
+
+.services{
+  padding: 50px 10px;
+  background-color: #ebebeb;
+}
+
+.services h1{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.services .line{
+  margin: 0 auto 20px;
+  width: 70px;
+  height: 3px;
+  background-color: orangered;
+}
+
+.box-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 50px 0 30px;
+}
+
+.box-container div{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 20px 10px;
+  border: 2px solid rgb(207, 80, 34);
+  background-color: #f5f1f1;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* ******************************************************************************** */
+/*                                WhY CHOOSE US STYLING                             */
+/* ******************************************************************************** */
+
+.why h1{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.why .line{
+  margin: 0 auto 20px;
+  width: 70px;
+  height: 3px;
+  background-color: orangered;
+}
+
+.why{
+  padding: 50px 10px;
+}
+
+.whys-container{
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-item{
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 10px;
+}
+
+.why-icon{
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.why-content p{
+  margin-bottom: 0;
+}
+
+/* footer */
 .footer-1,
 .footer-2,
 .footer-3 {
@@ -61,12 +236,12 @@ footer {
   grid-area: three;
 }
 
-p {
+.footer p {
   font-size: 15px;
   color: #ebebeb;
 }
 
-a {
+.footer a {
   text-decoration: none;
   color: var(--link-color);
   letter-spacing: 1px;
@@ -82,22 +257,23 @@ a {
 
 /* styling for footer-1 *************************************************************/
 
-img {
+.footer img {
   width: 100px;
   height: 100px;
+  margin-bottom: 15px;
 }
 
-h3 {
+.footer h3 {
   font-family: "Istok Web", sans-serif;
   font-size: 30px;
   color: #ebebeb;
 }
 
-h3 span {
+.footer h3 span {
   color: var(--link-color);
 }
 
-.footer-copyright {
+.footer .footer-copyright {
   color: #615e5e;
 }
 
@@ -113,7 +289,7 @@ h3 span {
   vertical-align: middle;
 }
 
-.footer-2 div div {
+.footer-2 div .f-2-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,23 +313,23 @@ h3 span {
   margin-top: 40px;
 }
 
-.facebook {
+.footer .facebook {
   color: #3b5998;
 }
-.insta {
+.footer .insta {
   color: #cd486b;
 }
-.youtube {
+.footer .youtube {
   color: #ec0909;
 }
-.linkedin {
+.footer .linkedin {
   color: #0e76a8;
 }
 .footer-icons a:hover {
   opacity: 0.85;
 }
 
-.footer-company-about {
+.footer .footer-company-about {
   color: var(--link-color);
 }
 
@@ -201,4 +377,28 @@ h3 span {
   .footer-1 div {
     margin-left: 15px;
   }
+}
+
+
+@media screen and (max-width: 400px){
+  .why-item{
+    flex-direction: column;
+    text-align: center;
+  }
+  .why-icon{
+    margin-bottom: 15px;
+  }
+}
+
+
+/* bootstrap styles */
+
+.form-inline .form-control {
+    display: inline-block !important;
+    width: auto !important;
+    vertical-align: middle !important;
+}
+
+.mr-sm-2, .mx-sm-2 {
+    margin-right: .5rem !important;
 }
