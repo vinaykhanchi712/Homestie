@@ -11,15 +11,18 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/589c2a6ba2.js" crossorigin="anonymous"></script>
     <!-- custom css -->
+    <link rel="stylesheet" href="/css/home2-min.css" />
     <link rel="stylesheet" href="/css/home-min.css" />
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #272727;">
-        <a class="navbar-brand" href="#">HOMESTIE</a>
+        <a class="navbar-brand" href="#">
+            <img src="/images/homestie.png" class="brand-img"/>
+            Homestie</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="ham-btn">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -30,6 +33,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/employment">Employment</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -52,68 +58,9 @@
                     </div>
                 </li>
             </ul>
-            <form class="form-inline mb-2">
+            <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-info my-2 my-sm-0 mb-2" type="submit">Search</button>
             </form>
         </div>
     </nav>
-
-
-    <!-- our services -->
-
-    <div class="services">
-        <h1>OUR SERVICES</h1>
-        <div class="line"></div>
-        <div class="box-container">
-            <div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quaerat eligendi doloribus vero
-                recusandae minus dignissimos dolor similique? Distinctio, sunt!
-            </div>
-            <div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quaerat eligendi doloribus vero
-                recusandae minus dignissimos dolor similique? Distinctio, sunt!
-            </div>
-            <div>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quaerat eligendi doloribus vero
-                recusandae minus dignissimos dolor similique? Distinctio, sunt!
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Why choose us -->
-
-    <div class="why">
-        <h1>WHY CHOOSE US</h1>
-        <div class="line"></div>
-        <div class="whys-container">
-            <div class="why-item">
-                <div class="why-icon">
-                    <i class="fas fa-cogs fa-3x"></i>
-                </div>
-                <div class="why-content">
-                    <h4>MOST EFFICIENT TECHNIQUES</h4>
-                    <p>We know how important is your time and intend to minimize your efforts and save your time.</p>
-                </div>
-            </div>
-            <div class="why-item">
-                <div class="why-icon">
-                    <i class="far fa-money-bill-alt fa-3x"></i>
-                </div>
-                <div class="why-content">
-                    <h4>EASY ON YOUR POCKET</h4>
-                    <p>We understand the importance of a faded bill. So we try our best to save your bills on us.</p>
-                </div>
-            </div>
-            <div class="why-item">
-                <div class="why-icon">
-                    <i class="fas fa-medkit fa-3x"></i>
-                </div>
-                <div class="why-content">
-                    <h4>WE SAVE LIVES.</h4>
-                    <p>Amid this pandemic we try to cut off a possible source of entering your home and also protecting those who have got no options but to risk their lives.</p>
-                </div>
-            </div>
-        </div>
-    </div>
