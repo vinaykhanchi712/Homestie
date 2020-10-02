@@ -11,7 +11,7 @@ const path = require("path")
 const homePageRouter = require("./router/homePageRouter")
 const loginPageRouter = require("./router/loginPageRouter")
 const signupPageRouter = require("./router/signupPageRouter")
-// const contactPageRouter = require("./router/contactPageRouter")
+const contactPageRouter = require("./router/contactPageRouter")
 const employmentPageRouter = require("./router/employmentPageRouter")
 const categoriesPageRouter = require("./router/categoriesPageRouter")
 const productPageRouter = require("./router/productPageRouter")
@@ -22,6 +22,20 @@ const app = express();
 
 // setting viewengine as ejs...
 app.set("view engine", "ejs")
+
+// connecting mongoose...
+const password = process.env.PASSWORD
+mongoose
+    .connect(`mongodb+srv://selva21:${password}@dbforhomestie.1sqlb.mongodb.net/homestieDatabase`, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then(() => {
+        console.log("DB connected");
+    })
+    .catch((err) => {
+        console.log(err.message);
+    });
 
 // uisng bodyParser middleware...
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -35,21 +49,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // serving static files
 app.use(express.static(path.join(__dirname, "public")))
 
-const password = process.env.PASSWORD
-
-// connecting mongoose...
-mongoose
-    .connect(`mongodb+srv://selva21:${password}@dbforhomestie.1sqlb.mongodb.net/homestieDatabase`, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
-    .then(() => {
-        console.log("DB connected");
-    })
-    .catch((err) => {
-        console.log(err.message);
-    });
-
 // routes....
 // home page route...
 app.use("/", homePageRouter)
@@ -61,7 +60,7 @@ app.use("/login", loginPageRouter)
 app.use("/signup", signupPageRouter)
 
 // contact page route....
-// app.use("/contact", contactPageRouter)
+app.use("/contact", contactPageRouter)
 
 // employment register page route....
 app.use("/employment", employmentPageRouter)
@@ -74,28 +73,6 @@ app.use("/product", productPageRouter)
 
 // consultation page route....
 app.use("/consultation", consultationPageRouter)
-
-// contact us...
-app.get("/contact", (req, res) => {
-    res.render("contactUs")
-})
-
-const contactModel = require("./models/contactModel")
-app.post("/contact", (req, res) => {
-    const newUserMessage = new contactModel({
-        name: req.body.name,
-        email: req.body.email,
-        subject: req.body.subject,
-        message: req.body.message
-    })
-    newUserMessage.save((err) => {
-        if(err){
-            console.log(err);
-        } else {
-            res.redirect("/contact")
-        }
-    })
-})
 
 
 // error page...
