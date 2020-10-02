@@ -18,14 +18,12 @@ router.post("/", (req, res) => {
         name: req.body.name,
         email: req.body.email,
         subject: req.body.subject,
-        message: req.body.message,
+        message: req.body.message
     });
 
     newUser.save((error) => {
-        if (error) {
-            console.log("ajbvkbdkvbe");
-            res.send(error)
-        } else {
+        if (error) console.log(error)
+        else {
             res.redirect("/contact");
         }
     })

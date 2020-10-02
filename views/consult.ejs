@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+</head>   
+<body>
+	<div class="container" style="margin-bottom: 50px;margin-top: 50px;">
+	<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">S No.</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Specialization</th>
+      <th scope="col">Phone No.</th>
+      <th scope="col">Booking</th>
+    </tr>
+  </thead>
+  <tbody>		
+    <% for( let i = 0; i < datas.length; i++ ) { %>
+      <tr>
+        <th scope="row"><%= i+1 %> </th>
+        <td><%= datas[i].firstName %>&nbsp;<%= datas[i].lastName %> </td>
+        <td><%= datas[i].speciality %> </td>
+        <td><%= datas[i].telNum %> </td>
+        <td><a href="#" class="btn btn-primary">Book Now</a></td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+</div>
+</body>
+</html>

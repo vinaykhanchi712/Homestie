@@ -1,6 +1,7 @@
 const express = require("express")
 const loginRouter = express.Router()
 const bodyParser = require("body-parser")
+const userModel = require("../models/userModel")
 
 loginRouter.use(bodyParser.json())
 
@@ -22,6 +23,20 @@ loginRouter.route("/:role")
         } else {
             res.redirect("/admin")
         }
-    })    
+    }) 
+    .post((req, res) => {
+        const role = req.params.role
+        userModel.find({ email : req.body.name }, (err, foundUser) => {
+            if(err){
+                res.send(err)
+            } else{
+                if( foundUser.password === req.body.password.trim() && foundUser.role === role ){
+                    res.render("logged-in")
+                } else {
+                    res.render("failedlogin", { data : role })
+                }
+            }
+        })
+    })
 
 module.exports = loginRouter

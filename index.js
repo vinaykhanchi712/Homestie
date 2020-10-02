@@ -8,13 +8,14 @@ const mongoose = require("mongoose")
 const path = require("path")
 
 // incuding router files....
-const homePageRouter = require("./router/homePageRouter") 
-const loginPageRouter = require("./router/loginPageRouter") 
-const signupPageRouter = require("./router/signupPageRouter") 
-const contactPageRouter = require("./router/contactPageRouter")
+const homePageRouter = require("./router/homePageRouter")
+const loginPageRouter = require("./router/loginPageRouter")
+const signupPageRouter = require("./router/signupPageRouter")
+// const contactPageRouter = require("./router/contactPageRouter")
 const employmentPageRouter = require("./router/employmentPageRouter")
 const categoriesPageRouter = require("./router/categoriesPageRouter")
 const productPageRouter = require("./router/productPageRouter")
+const consultationPageRouter = require("./router/consultationPageRoute")
 
 // initiaising express app....
 const app = express();
@@ -23,7 +24,7 @@ const app = express();
 app.set("view engine", "ejs")
 
 // uisng bodyParser middleware...
-app.use(bodyParser.urlencoded({ extended : true }))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // *********************************************************************************
 // use morgan middleware only for developing....
@@ -60,7 +61,7 @@ app.use("/login", loginPageRouter)
 app.use("/signup", signupPageRouter)
 
 // contact page route....
-app.use("/contact", contactPageRouter)
+// app.use("/contact", contactPageRouter)
 
 // employment register page route....
 app.use("/employment", employmentPageRouter)
@@ -70,6 +71,31 @@ app.use("/categories", categoriesPageRouter)
 
 // product page route....
 app.use("/product", productPageRouter)
+
+// consultation page route....
+app.use("/consultation", consultationPageRouter)
+
+// contact us...
+app.get("/contact", (req, res) => {
+    res.render("contactUs")
+})
+
+const contactModel = require("./models/contactModel")
+app.post("/contact", (req, res) => {
+    const newUserMessage = new contactModel({
+        name: req.body.name,
+        email: req.body.email,
+        subject: req.body.subject,
+        message: req.body.message
+    })
+    newUserMessage.save((err) => {
+        if(err){
+            console.log(err);
+        } else {
+            res.redirect("/contact")
+        }
+    })
+})
 
 
 // error page...

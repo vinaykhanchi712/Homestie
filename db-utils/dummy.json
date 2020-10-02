@@ -1,0 +1,56 @@
+[
+  {
+    "firstName": "Silvanus",
+    "lastName": "P",
+    "areaCode": "+91",
+    "telNum": "8109267849",
+    "email": "abc@g.com",
+    "speciality": "mobile",
+    "address": "atlantic"
+  },
+  {
+    "firstName": "amit",
+    "lastName": "singh",
+    "areaCode": "+91",
+    "telNum": "810117849",
+    "email": "abdgfb@g.com",
+    "speciality": "homeappliances",
+    "address": "venus"
+  },
+  {
+    "firstName": "rahul",
+    "lastName": "kumar",
+    "areaCode": "+91",
+    "telNum": "1209267849",
+    "email": "abcd@g.com",
+    "speciality": "laptops",
+    "address": "andaman"
+  },
+  {
+    "firstName": "Somya",
+    "lastName": "sanu",
+    "areaCode": "+91",
+    "telNum": "13267849",
+    "email": "abcdks@g.com",
+    "speciality": "electricappliances",
+    "address": "wasseypur"
+  },
+  {
+    "firstName": "anshul",
+    "lastName": "verma",
+    "areaCode": "+91",
+    "telNum": "132676849",
+    "email": "abcdksa@g.com",
+    "speciality": "mobile",
+    "address": "jungle"
+  },
+  {
+    "firstName": "bot",
+    "lastName": "sign",
+    "areaCode": "+91",
+    "telNum": "12332676849",
+    "email": "ab12a@g.com",
+    "speciality": "mobile",
+    "address": "virtual"
+  }
+]
