@@ -32,7 +32,7 @@
         "description": "Dual-core 5th-generation Intel Core i5 processor. Intel HD Graphics 6000.SSD storage,8GB memory.Two USB 3 ports,Thunderbolt 2 port",
         "video": "https://youtu.be/AtmvPaI9GPA",
         "warrenty": "https://checkcoverage.apple.com/",
-        "category": "laptop"
+        "category": "laptops"
     },
     {
         "id": 5,
@@ -41,7 +41,7 @@
         "description": "Intel i7-7700HQ processor16GB DDR4 RAM,1TB hard drive.17-inch screen,NVIDIA GeForce GTX 1070 8GB Graphics ",
         "video": "https://youtu.be/fURkRSbO20k",
         "warrenty": "https://www.dell.com/support/contents/en-in/category/warranty",
-        "category": "laptop"
+        "category": "laptops"
     },
     {
         "id": 6,
@@ -50,7 +50,7 @@
         "description": "Intel core i5 8265u.light weight, 14 inch display.Advance security features(encription,MFA,etc.).",
         "video": "https://youtu.be/OwXggnqJLEI",
         "warrenty": "https://pcsupport.lenovo.com/in/en/warrantylookup#/",
-        "category": "laptop"
+        "category": "laptops"
     },
     {
         "id": 7,
@@ -59,7 +59,7 @@
         "description": "1.8GHz Quad-Core 64-bit CPU, Game First Priority, Link Aggregation, 16GB Storage, Airtime Fairness, Secured WiFi, Works with Alexa ",
         "video": "https://youtu.be/aozLKpqBsa8",
         "warrenty": "https://www.tp-link.com/us/support/replacement-warranty/",
-        "category": "networking"
+        "category": "networkcomponents"
     },
     {
         "id": 8,
@@ -68,7 +68,7 @@
         "description": "Dual Band Gigabit Wireless Cable Router, Wi-Fi Speed Up to 1300 Mbps/5 GHz + 450 Mbps/2.4 GHz, 4 Gigabit LAN Ports, 1 USB Port, Qualcomm Chipset.",
         "video": "https://youtu.be/VLQAe91-R4Q",
         "warrenty": "https://www.tp-link.com/us/support/replacement-warranty/",
-        "category": "networking"
+        "category": "networkcomponents"
     },
     {
         "id": 9,
@@ -77,7 +77,7 @@
         "description": "150Mbps Wireless 4G Portable Router.Make video and HD voice calls, audio & video conference, send SMS with jiocall voice app",
         "video": "https://youtu.be/1PptPyCsg1c",
         "warrenty": "https://www.jio.com/en-in/faq/online-shopping/returns-refunds/what-is-the-warranty-period-applicable-on-the-jiofi.html#:~:text=The%20LYF%2Dpowered%20JioFi%20device,from%20the%20date%20of%20purchase.",
-        "category": "networking"
+        "category": "networkcomponents"
     },
     {
         "id": 10,
@@ -86,7 +86,7 @@
         "description": "Split AC; 1 ton capacity; Minimum set Temp (°C): 16, 100% Copper.6th sense fast cool technology.Stabilizer free(145v-290v) ",
         "video": "https://youtu.be/rLONsKVFRNk",
         "warrenty": "https://corporate.whirlpoolindia.com/discover/annual_maintenance#gref",
-        "category": "electronics"
+        "category": "electricappliances"
     },
     {
         "id": 11,
@@ -95,7 +95,7 @@
         "description": "Resolution: 4K Ultra HD (3840X2160) | Refresh Rate: 60 hertz,Connectivity: 3 HDMI ports to connect set top box, Blu Ray players, gaming console | 2 USB ports to connect hard drives and other USB devices .Sound : 20 Watts Output ",
         "video": "https://youtu.be/dEdvxW16DdE",
         "warrenty": "https://www.samsung.com/in/support/warranty/",
-        "category": "electronics"
+        "category": "electricappliances"
     },
     {
         "id": 12,
@@ -104,7 +104,7 @@
         "description": "Fully-automatic top load washing machine: Affordable with great wash quality, Easy to use,Capacity 7 kg :Suitable for families with 3 to 4 members. Product Dimensions (WDH) 88 X 56 X 54 cm",
         "video": "https://youtu.be/8SiRjp-Smcs",
         "warrenty": "https://corporate.whirlpoolindia.com/discover/annual_maintenance#gref",
-        "category": "electronics"
+        "category": "electricappliances"
     },
     {
         "id": 13,
@@ -113,7 +113,7 @@
         "description": "Tube Light (40 Watts): 3, Ceiling Fan (90 Watts): 3, LED Television: 1,Sine Wave Technology, 900 VA/12 Volts Capacity, 150 Ah,32 Bit DSP Processor, Maximum Bulb Load: 685 Watt .Item Dimensions: 275 mm x 248 mm x 120 mm",
         "video": "https://youtu.be/kFxZbwmH_ys",
         "warrenty": "https://www.luminousindia.com/warranty",
-        "category": "home appliance"
+        "category": "homeappliances"
     },
     {
         "id": 14,
@@ -122,7 +122,7 @@
         "description": "Rust proof body,High pressure resistance, capacity 10 litres,4 star rating",
         "video": "https://youtu.be/7_G3SiYKrn0",
         "warrenty": "https://www.racold.com/support",
-        "category": "home appliance"
+        "category": "homeappliances"
     },
     {
         "id": 15,
@@ -131,7 +131,7 @@
         "description": "Capacity: 20 litres power: 1200 watt. Flexi power settings: for microwave cooking, there are 6 power levels to choose from.30 minutes timer.",
         "video": "https://youtu.be/ir9fuUt2ptQ",
         "warrenty": "https://www.morphyrichardsindia.com/register.aspx",
-        "category": "home appliance"
+        "category": "homeappliances"
     }
 
 ]

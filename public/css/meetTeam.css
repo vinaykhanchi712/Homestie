@@ -31,13 +31,21 @@ header {
 .test {
   width: 700px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
   justify-content: space-between;
+  justify-items: start;
   transition: all 0.2s ease-in-out 0.2s;
-  padding: 0px 25px;
+  padding: 10px 25px;
+  margin: 20px 0;
 }
-
-p {
-  padding: 100px 10px;
+.test h3{
+  margin: 10px 0;
+}
+.test h5{
+  margin: 5px 0;
+  font-weight: 400 !important;
 }
 
 .logo{
@@ -52,6 +60,7 @@ h1 {
 
 h2 {
   letter-spacing: 1px;
+  margin: 20px 0 10px;
 }
 
 .pic {
@@ -59,7 +68,6 @@ h2 {
   height: 180px;
   border-radius: 90px;
   position: relative;
-  top: 50px;
 }
 
 .aboutus {
@@ -81,10 +89,6 @@ img {
   justify-content: center;
 }
 
-h2 {
-  position: relative;
-  top: 65px;
-}
 
 .contactus {
   display: flex;

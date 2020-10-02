@@ -1,52 +1,19 @@
 const express = require("express")
-const router = express.Router()
-const db = require("../db-utils/content.json")
+const categoriesRouter = express.Router()
+const productsModel = require("../models/productsModel")
+const mongoose = require("mongoose")
 
+categoriesRouter.route("/:categories")
+    .get((req, res) => {
+        const category = req.params.categories
 
-router.get("/mobile", (req, res) => {
-    let arrayOfProducts = []    
-    db.forEach(data => {
-        if( data.category === "mobile" ){
-            arrayOfProducts.push(data)
-        }
-    });
-    res.render("categories", { data : arrayOfProducts })
-})
-router.get("/laptops", (req, res) => {
-    let arrayOfProducts = []    
-    db.forEach(data => {
-        if( data.category === "laptop" ){
-            arrayOfProducts.push(data)
-        }
-    });
-    res.render("categories", { data: arrayOfProducts })
-})
-router.get("/networkcomponents", (req, res) => {
-    let arrayOfProducts = []    
-    db.forEach(data => {
-        if( data.category === "networking" ){
-            arrayOfProducts.push(data)
-        }
-    });
-    res.render("categories", { data : arrayOfProducts })
-})
-router.get("/electricappliances", (req, res) => {
-    let arrayOfProducts = []    
-    db.forEach(data => {
-        if( data.category === "electronics" ){
-            arrayOfProducts.push(data)
-        }
-    });
-    res.render("categories", { data : arrayOfProducts })
-})
-router.get("/homeappliances", (req, res) => {
-    let arrayOfProducts = []    
-    db.forEach(data => {
-        if( data.category === "home appliance" ){
-            arrayOfProducts.push(data)
-        }
-    });
-    res.render("categories", { data : arrayOfProducts })
-})
+        productsModel.find({ category : category }, (err, foundItems) => {
+            if(err){
+                console.log(err);
+            } else{
+                res.render("categories", { data: foundItems })
+            }
+        })
+    })
 
-module.exports = router
+module.exports = categoriesRouter

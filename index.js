@@ -1,10 +1,13 @@
 require("dotenv").config()
+
+// requiring modules....
 const express = require("express")
 const bodyParser = require("body-parser")
 const ejs = require("ejs")
+const mongoose = require("mongoose")
 const path = require("path")
 
-// incuding router files
+// incuding router files....
 const homePageRouter = require("./router/homePageRouter") 
 const loginPageRouter = require("./router/loginPageRouter") 
 const signupPageRouter = require("./router/signupPageRouter") 
@@ -13,7 +16,7 @@ const employmentPageRouter = require("./router/employmentPageRouter")
 const categoriesPageRouter = require("./router/categoriesPageRouter")
 const productPageRouter = require("./router/productPageRouter")
 
-// initiaising express app 
+// initiaising express app....
 const app = express();
 
 // setting viewengine as ejs...
@@ -31,6 +34,18 @@ app.use(bodyParser.urlencoded({ extended : true }))
 // serving static files
 app.use(express.static(path.join(__dirname, "public")))
 
+// connecting mongoose...
+mongoose
+    .connect("mongodb://localhost:27017/homestieDatabase", {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then(() => {
+        console.log("DB connected");
+    })
+    .catch((err) => {
+        console.log(err.message);
+    });
 
 // routes....
 // home page route...
