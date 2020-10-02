@@ -28,7 +28,7 @@
 }
 
 .categories {
-  padding: 0 20px;
+  padding: auto 25px !important;
 }
 
 .text {
@@ -43,10 +43,6 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   color: #eaeaea;
-}
-
-select {
-  width: 50% !important;
 }
 
 .sectionlogo {

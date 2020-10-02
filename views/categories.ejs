@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="/css/categories-min.css">
+</head>
+
+<body>
+    <h2 class="display-4" style="text-align: center;"><b>Homstie</b><br>
+        <hr><span>The content of your need.</span>
+    </h2>
+    <div class="container">
+        <div class="row">
+            <!-- cards -->
+
+            <% for( let i = 0; i < data.length; i++ ) { %>
+            <div class="col-12 col-md-6 col-lg-4 card-cont">
+                <div class="card shadow  mr-auto ml-auto rounded" style="width: 18rem;">
+                    <img class="card-img-top card-image" src=<%= data[i].image %> alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"> <%= data[i].name %> </h5>
+                        <p class="card-text"> <%= data[i].description %> </p>
+                        <a href="/product/<%= data[i].id %> " class="btn btn-dark btn-block btn-lg" role="button" aria-pressed="true">Get
+                            Info</a>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
+            <!-- cards ends here -->
+        </div>
+    </div>
+</body>
+
+</html>

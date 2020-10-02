@@ -10,6 +10,8 @@ const loginPageRouter = require("./router/loginPageRouter")
 const signupPageRouter = require("./router/signupPageRouter") 
 const contactPageRouter = require("./router/contactPageRouter")
 const employmentPageRouter = require("./router/employmentPageRouter")
+const categoriesPageRouter = require("./router/categoriesPageRouter")
+const productPageRouter = require("./router/productPageRouter")
 
 // initiaising express app 
 const app = express();
@@ -22,8 +24,8 @@ app.use(bodyParser.urlencoded({ extended : true }))
 
 // *********************************************************************************
 // use morgan middleware only for developing....
-const morgan = require("morgan")
-app.use(morgan("dev"))
+// const morgan = require("morgan")
+// app.use(morgan("dev"))
 // *********************************************************************************
 
 // serving static files
@@ -46,6 +48,11 @@ app.use("/contact", contactPageRouter)
 // employment register page route....
 app.use("/employment", employmentPageRouter)
 
+// categories page route....
+app.use("/categories", categoriesPageRouter)
+
+// product page route....
+app.use("/product", productPageRouter)
 
 
 // error page...

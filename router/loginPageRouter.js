@@ -1,10 +1,27 @@
 const express = require("express")
-const router = express.Router()
+const loginRouter = express.Router()
+const bodyParser = require("body-parser")
 
-router.get("/:role", (req, res) => {
-    const userRole = req.params.role
+loginRouter.use(bodyParser.json())
+
+loginRouter.route("/user")
+    .get((req, res) => {
+        res.render("login", { role : "user" })
+    })
+
+loginRouter.route("/admin")
+    .get((req ,res) => {
+        res.render("login", { role: "admin" })
+    })
     
-    res.render("login")
-})
+loginRouter.route("/:role")
+    .get((req, res) => {
+        const role = req.body.role
+        if( role === "user" ){
+            res.redirect("/user")
+        } else {
+            res.redirect("/admin")
+        }
+    })    
 
-module.exports = router
+module.exports = loginRouter

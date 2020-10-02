@@ -13,7 +13,7 @@
 
   <body>
     <header>
-      <form action="backend.php">
+      <form action="/signup/<%= role %>" method="POST">
         <h2>Welcome to Homestie!</h2>
         <div class="firstname">
           <label for="first"> </label>
@@ -56,7 +56,7 @@
           <input type="submit" value="Sign up" />
         </div>
         <div class="create">
-          <a href="/login">Already have an account! &#10145; </a>
+          <a href="/login/<%= role %>">Already have an account! &#10145; </a>
         </div>
       </form>
     </header>

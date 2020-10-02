@@ -17,7 +17,7 @@
         <div class="logo">
           <img src="/images/homestie.png" alt="image not found" />
         </div>
-        <form action="backend.php">
+        <form action="/login/<%= role %>" method="POST">
           <div class="elements">
             <div class="email">
               <label for="emailid"> </label>
@@ -47,7 +47,7 @@
           </div>
 
           <div class="create">
-            <a href="/signup">Create your account &#10145; </a>
+            <a href="/signup/<%= role %>">Create your account &#10145; </a>
           </div>
         </form>
       </div>
