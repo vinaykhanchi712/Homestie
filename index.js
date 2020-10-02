@@ -34,9 +34,11 @@ app.use(bodyParser.urlencoded({ extended : true }))
 // serving static files
 app.use(express.static(path.join(__dirname, "public")))
 
+const password = process.env.PASSWORD
+
 // connecting mongoose...
 mongoose
-    .connect("mongodb://localhost:27017/homestieDatabase", {
+    .connect(`mongodb+srv://selva21:${password}@dbforhomestie.1sqlb.mongodb.net/homestieDatabase`, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })

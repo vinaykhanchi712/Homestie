@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 // schema for collection...
-const userSchema = new mongoose.Schema({
+const contactSchema = new mongoose.Schema({
     name: String,
     email: String,
     message: String,
@@ -9,4 +9,4 @@ const userSchema = new mongoose.Schema({
 });
 
 // creating a model...
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("Contact", contactSchema);

@@ -23,6 +23,7 @@ router.post("/", (req, res) => {
 
     newUser.save((error) => {
         if (error) {
+            console.log("ajbvkbdkvbe");
             res.send(error)
         } else {
             res.redirect("/contact");
