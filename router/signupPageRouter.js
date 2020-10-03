@@ -2,6 +2,8 @@ const express = require("express")
 const signupRouter = express.Router()
 const bodyParser = require("body-parser")
 const userModel = require("../models/userModel")
+const bcrypt = require("bcrypt")
+const saltrounds = 12
 
 signupRouter.use(bodyParser.json())
 
@@ -27,21 +29,29 @@ signupRouter.route("/:role")
     .post((req, res) => {
         const role = req.params.role
         if(req.body.password === req.body.password2){
-            const newUser = new userModel({
-                role: role,
-                email: req.body.email,
-                name: req.body.name,
-                number: req.body.number,
-                password: req.body.password
-            })
-
-            newUser.save((err) => {
+            bcrypt.hash(req.body.password, saltrounds, (err, hash) => {
                 if(err){
                     res.send(err)
                 } else {
-                    res.render("logged-in")
+                    const newUser = new userModel({
+                        role: role,
+                        email: req.body.email,
+                        name: req.body.name,
+                        number: req.body.number,
+                        password: hash
+                    })
+        
+                    newUser.save((err) => {
+                        if(err){
+                            res.send(err)
+                        } else {
+                            res.render("loggedIn")
+                        }
+                    })
                 }
             })
+        } else {
+            res.send("Your passwords dont match")
         }
     })
 
