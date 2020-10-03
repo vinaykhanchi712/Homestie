@@ -26,8 +26,8 @@ app.set("view engine", "ejs")
 // connecting mongoose...
 const password = process.env.PASSWORD
 mongoose
-    // .connect(`mongodb+srv://selva21:${password}@dbforhomestie.1sqlb.mongodb.net/homestieDatabase`, {
-    .connect(`mongodb://localhost:27017/homestieDatabase`, {
+    .connect(`mongodb+srv://selva21:${password}@dbforhomestie.1sqlb.mongodb.net/homestieDatabase`, {
+    // .connect(`mongodb://localhost:27017/homestieDatabase`, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
